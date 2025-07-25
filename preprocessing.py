@@ -14,11 +14,31 @@ def binarize_images(images, threshold=0.5):
     return (images > threshold).astype(np.float32)
 
 
-def apply_pca(images, n_components=50):
+# def apply_pca(images, n_components=50):
+#     flat_images = images.reshape(images.shape[0], -1)
+#     pca = PCA(n_components=n_components)
+#     reduced = pca.fit_transform(flat_images)
+#     return reduced, pca
+
+
+def apply_pca(images, n_components=50, variance_ratio=None):
     flat_images = images.reshape(images.shape[0], -1)
-    pca = PCA(n_components=n_components)
-    reduced = pca.fit_transform(flat_images)
+
+    if variance_ratio:
+        # Use variance ratio (e.g., 0.95 for 95% variance)
+        pca = PCA(n_components=variance_ratio)
+        reduced = pca.fit_transform(flat_images)
+        print(f"PCA retained {pca.n_components_} components to explain {variance_ratio * 100:.1f}% of variance")
+    else:
+        # Use fixed number of components
+        pca = PCA(n_components=n_components)
+        reduced = pca.fit_transform(flat_images)
+        explained_var = pca.explained_variance_ratio_.sum()
+        print(f"PCA used {n_components} components, explaining {explained_var * 100:.1f}% of variance")
+
     return reduced, pca
+
+
 
 
 def extract_hog_features(images):
@@ -67,3 +87,4 @@ def edge_detection(images, method="sobel"):
         else:
             raise ValueError("Unsupported edge detection method")
     return np.array(edges)
+
