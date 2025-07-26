@@ -12,14 +12,7 @@ def normalize_images(images):
 
 def binarize_images(images, threshold=0.5):
     return (images > threshold).astype(np.float32)
-
-
-# def apply_pca(images, n_components=50):
-#     flat_images = images.reshape(images.shape[0], -1)
-#     pca = PCA(n_components=n_components)
-#     reduced = pca.fit_transform(flat_images)
-#     return reduced, pca
-
+    
 
 def apply_pca(images, n_components=50, variance_ratio=None):
     flat_images = images.reshape(images.shape[0], -1)
