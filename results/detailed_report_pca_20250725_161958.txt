@@ -1,0 +1,79 @@
+MNIST Analysis Report - pca
+Generated: 20250725_161958
+==================================================
+
+Model Performance Summary:
+------------------------------
+
+KNN:
+  Accuracy: 0.6900
+  Training Time: 0.00 seconds
+
+SVM:
+  Accuracy: 0.7600
+  Training Time: 0.01 seconds
+  Training Subset Size: 200
+
+Random Forest:
+  Accuracy: 0.6350
+  Training Time: 0.35 seconds
+
+MLP:
+  Accuracy: 0.6700
+  Training Time: 4.30 seconds
+
+
+Misclassification Analysis:
+------------------------------
+
+KNN:
+  Misclassification rates by digit:
+    Digit 0: 0.000
+    Digit 1: 0.000
+    Digit 2: 0.500
+    Digit 3: 0.250
+    Digit 4: 0.357
+    Digit 5: 0.800
+    Digit 6: 0.350
+    Digit 7: 0.417
+    Digit 8: 0.200
+    Digit 9: 0.238
+
+SVM:
+  Misclassification rates by digit:
+    Digit 0: 0.000
+    Digit 1: 0.000
+    Digit 2: 0.188
+    Digit 3: 0.188
+    Digit 4: 0.179
+    Digit 5: 0.700
+    Digit 6: 0.350
+    Digit 7: 0.333
+    Digit 8: 0.100
+    Digit 9: 0.333
+
+Random Forest:
+  Misclassification rates by digit:
+    Digit 0: 0.000
+    Digit 1: 0.000
+    Digit 2: 0.375
+    Digit 3: 0.188
+    Digit 4: 0.321
+    Digit 5: 1.000
+    Digit 6: 0.400
+    Digit 7: 0.542
+    Digit 8: 0.300
+    Digit 9: 0.524
+
+MLP:
+  Misclassification rates by digit:
+    Digit 0: 0.059
+    Digit 1: 0.000
+    Digit 2: 0.375
+    Digit 3: 0.250
+    Digit 4: 0.250
+    Digit 5: 0.950
+    Digit 6: 0.450
+    Digit 7: 0.375
+    Digit 8: 0.500
+    Digit 9: 0.286

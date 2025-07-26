@@ -1,0 +1,32 @@
+{
+    "timestamp": "20250725_162010",
+    "preprocessing": "binarize",
+    "model_results": {
+        "KNN": {
+            "accuracy": 0.67,
+            "train_time": 0.0005376338958740234,
+            "preprocessing": "binarize"
+        },
+        "SVM": {
+            "accuracy": 0.695,
+            "train_time": 0.012277841567993164,
+            "preprocessing": "binarize",
+            "subset_size": 200
+        },
+        "Random Forest": {
+            "accuracy": 0.71,
+            "train_time": 0.22634339332580566,
+            "preprocessing": "binarize"
+        },
+        "MLP": {
+            "accuracy": 0.685,
+            "train_time": 4.671755790710449,
+            "preprocessing": "binarize"
+        },
+        "CNN": {
+            "accuracy": 0.685,
+            "train_time": 3.3750123977661133,
+            "preprocessing": "binarize"
+        }
+    }
+}

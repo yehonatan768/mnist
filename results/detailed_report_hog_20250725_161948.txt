@@ -1,0 +1,79 @@
+MNIST Analysis Report - hog
+Generated: 20250725_161948
+==================================================
+
+Model Performance Summary:
+------------------------------
+
+KNN:
+  Accuracy: 0.8200
+  Training Time: 0.00 seconds
+
+SVM:
+  Accuracy: 0.8900
+  Training Time: 0.01 seconds
+  Training Subset Size: 200
+
+Random Forest:
+  Accuracy: 0.7550
+  Training Time: 0.32 seconds
+
+MLP:
+  Accuracy: 0.7850
+  Training Time: 4.24 seconds
+
+
+Misclassification Analysis:
+------------------------------
+
+KNN:
+  Misclassification rates by digit:
+    Digit 0: 0.000
+    Digit 1: 0.000
+    Digit 2: 0.500
+    Digit 3: 0.000
+    Digit 4: 0.107
+    Digit 5: 0.500
+    Digit 6: 0.000
+    Digit 7: 0.375
+    Digit 8: 0.300
+    Digit 9: 0.143
+
+SVM:
+  Misclassification rates by digit:
+    Digit 0: 0.000
+    Digit 1: 0.000
+    Digit 2: 0.125
+    Digit 3: 0.000
+    Digit 4: 0.107
+    Digit 5: 0.400
+    Digit 6: 0.050
+    Digit 7: 0.167
+    Digit 8: 0.100
+    Digit 9: 0.143
+
+Random Forest:
+  Misclassification rates by digit:
+    Digit 0: 0.000
+    Digit 1: 0.000
+    Digit 2: 0.625
+    Digit 3: 0.000
+    Digit 4: 0.143
+    Digit 5: 0.550
+    Digit 6: 0.200
+    Digit 7: 0.417
+    Digit 8: 0.500
+    Digit 9: 0.238
+
+MLP:
+  Misclassification rates by digit:
+    Digit 0: 0.000
+    Digit 1: 0.000
+    Digit 2: 0.625
+    Digit 3: 0.062
+    Digit 4: 0.143
+    Digit 5: 0.500
+    Digit 6: 0.000
+    Digit 7: 0.292
+    Digit 8: 0.500
+    Digit 9: 0.286

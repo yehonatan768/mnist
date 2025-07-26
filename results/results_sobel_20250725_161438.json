@@ -1,0 +1,32 @@
+{
+    "timestamp": "20250725_161438",
+    "preprocessing": "sobel",
+    "model_results": {
+        "KNN": {
+            "accuracy": 0.56,
+            "train_time": 0.0011219978332519531,
+            "preprocessing": "sobel"
+        },
+        "SVM": {
+            "accuracy": 0.42,
+            "train_time": 0.004005908966064453,
+            "preprocessing": "sobel",
+            "subset_size": 50
+        },
+        "Random Forest": {
+            "accuracy": 0.56,
+            "train_time": 0.2855873107910156,
+            "preprocessing": "sobel"
+        },
+        "MLP": {
+            "accuracy": 0.68,
+            "train_time": 4.5844032764434814,
+            "preprocessing": "sobel"
+        },
+        "CNN": {
+            "accuracy": 0.56,
+            "train_time": 3.310321807861328,
+            "preprocessing": "sobel"
+        }
+    }
+}

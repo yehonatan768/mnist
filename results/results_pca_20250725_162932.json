@@ -1,0 +1,27 @@
+{
+    "timestamp": "20250725_162932",
+    "preprocessing": "pca",
+    "model_results": {
+        "KNN": {
+            "accuracy": 0.68,
+            "train_time": 0.0010013580322265625,
+            "preprocessing": "pca"
+        },
+        "SVM": {
+            "accuracy": 0.76,
+            "train_time": 0.005996227264404297,
+            "preprocessing": "pca",
+            "subset_size": 200
+        },
+        "Random Forest": {
+            "accuracy": 0.64,
+            "train_time": 0.29353833198547363,
+            "preprocessing": "pca"
+        },
+        "MLP": {
+            "accuracy": 0.69,
+            "train_time": 3.7231180667877197,
+            "preprocessing": "pca"
+        }
+    }
+}

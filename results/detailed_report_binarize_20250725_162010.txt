@@ -1,0 +1,96 @@
+MNIST Analysis Report - binarize
+Generated: 20250725_162010
+==================================================
+
+Model Performance Summary:
+------------------------------
+
+KNN:
+  Accuracy: 0.6700
+  Training Time: 0.00 seconds
+
+SVM:
+  Accuracy: 0.6950
+  Training Time: 0.01 seconds
+  Training Subset Size: 200
+
+Random Forest:
+  Accuracy: 0.7100
+  Training Time: 0.23 seconds
+
+MLP:
+  Accuracy: 0.6850
+  Training Time: 4.67 seconds
+
+CNN:
+  Accuracy: 0.6850
+  Training Time: 3.38 seconds
+
+
+Misclassification Analysis:
+------------------------------
+
+KNN:
+  Misclassification rates by digit:
+    Digit 0: 0.000
+    Digit 1: 0.000
+    Digit 2: 0.688
+    Digit 3: 0.250
+    Digit 4: 0.286
+    Digit 5: 0.850
+    Digit 6: 0.350
+    Digit 7: 0.333
+    Digit 8: 0.400
+    Digit 9: 0.333
+
+SVM:
+  Misclassification rates by digit:
+    Digit 0: 0.118
+    Digit 1: 0.000
+    Digit 2: 0.250
+    Digit 3: 0.188
+    Digit 4: 0.250
+    Digit 5: 0.850
+    Digit 6: 0.400
+    Digit 7: 0.375
+    Digit 8: 0.200
+    Digit 9: 0.429
+
+Random Forest:
+  Misclassification rates by digit:
+    Digit 0: 0.059
+    Digit 1: 0.000
+    Digit 2: 0.438
+    Digit 3: 0.188
+    Digit 4: 0.214
+    Digit 5: 0.900
+    Digit 6: 0.350
+    Digit 7: 0.250
+    Digit 8: 0.300
+    Digit 9: 0.333
+
+MLP:
+  Misclassification rates by digit:
+    Digit 0: 0.000
+    Digit 1: 0.000
+    Digit 2: 0.250
+    Digit 3: 0.312
+    Digit 4: 0.321
+    Digit 5: 0.800
+    Digit 6: 0.450
+    Digit 7: 0.333
+    Digit 8: 0.400
+    Digit 9: 0.381
+
+CNN:
+  Misclassification rates by digit:
+    Digit 0: 0.000
+    Digit 1: 0.036
+    Digit 2: 0.438
+    Digit 3: 0.062
+    Digit 4: 0.321
+    Digit 5: 0.950
+    Digit 6: 0.350
+    Digit 7: 0.250
+    Digit 8: 0.400
+    Digit 9: 0.429

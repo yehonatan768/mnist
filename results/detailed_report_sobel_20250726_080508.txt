@@ -1,0 +1,96 @@
+MNIST Analysis Report - sobel
+Generated: 20250726_080508
+==================================================
+
+Model Performance Summary:
+------------------------------
+
+KNN:
+  Accuracy: 0.9554
+  Training Time: 0.05 seconds
+
+SVM:
+  Accuracy: 0.9389
+  Training Time: 10.99 seconds
+  Training Subset Size: 10000
+
+Random Forest:
+  Accuracy: 0.9471
+  Training Time: 202.79 seconds
+
+MLP:
+  Accuracy: 0.9663
+  Training Time: 24.33 seconds
+
+CNN:
+  Accuracy: 0.9906
+  Training Time: 52.83 seconds
+
+
+Misclassification Analysis:
+------------------------------
+
+KNN:
+  Misclassification rates by digit:
+    Digit 0: 0.008
+    Digit 1: 0.006
+    Digit 2: 0.052
+    Digit 3: 0.053
+    Digit 4: 0.056
+    Digit 5: 0.085
+    Digit 6: 0.015
+    Digit 7: 0.053
+    Digit 8: 0.074
+    Digit 9: 0.052
+
+SVM:
+  Misclassification rates by digit:
+    Digit 0: 0.022
+    Digit 1: 0.016
+    Digit 2: 0.057
+    Digit 3: 0.080
+    Digit 4: 0.055
+    Digit 5: 0.105
+    Digit 6: 0.034
+    Digit 7: 0.069
+    Digit 8: 0.110
+    Digit 9: 0.071
+
+Random Forest:
+  Misclassification rates by digit:
+    Digit 0: 0.017
+    Digit 1: 0.019
+    Digit 2: 0.047
+    Digit 3: 0.070
+    Digit 4: 0.049
+    Digit 5: 0.087
+    Digit 6: 0.035
+    Digit 7: 0.056
+    Digit 8: 0.080
+    Digit 9: 0.075
+
+MLP:
+  Misclassification rates by digit:
+    Digit 0: 0.015
+    Digit 1: 0.011
+    Digit 2: 0.030
+    Digit 3: 0.042
+    Digit 4: 0.039
+    Digit 5: 0.036
+    Digit 6: 0.027
+    Digit 7: 0.029
+    Digit 8: 0.059
+    Digit 9: 0.053
+
+CNN:
+  Misclassification rates by digit:
+    Digit 0: 0.008
+    Digit 1: 0.004
+    Digit 2: 0.007
+    Digit 3: 0.007
+    Digit 4: 0.012
+    Digit 5: 0.010
+    Digit 6: 0.011
+    Digit 7: 0.008
+    Digit 8: 0.009
+    Digit 9: 0.018

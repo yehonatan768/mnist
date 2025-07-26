@@ -1,0 +1,465 @@
+D:\Projects\mnist\.venv\Scripts\python.exe D:\Projects\mnist\main.py 
+2025-07-26 07:56:34.847765: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From D:\Projects\mnist\.venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+Loading MNIST dataset...
+Training set shape: (60000, 28, 28)
+Test set shape: (10000, 28, 28)
+
+============================================================
+Testing with preprocessing: baseline
+============================================================
+
+==================================================
+Training K-Nearest Neighbors...
+KNN Accuracy: 0.9688
+Training time: 0.03 seconds
+
+==================================================
+Training Support Vector Machine...
+Note: This may take several minutes...
+SVM Accuracy: 0.9627
+Training time: 9.30 seconds
+
+==================================================
+Training Random Forest...
+Random Forest Accuracy: 0.9690
+Training time: 63.31 seconds
+
+==================================================
+Training Multi-Layer Perceptron...
+WARNING:tensorflow:From D:\Projects\mnist\.venv\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2025-07-26 07:58:22.691046: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2 AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From D:\Projects\mnist\.venv\lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+Epoch 1/20
+WARNING:tensorflow:From D:\Projects\mnist\.venv\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From D:\Projects\mnist\.venv\lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+422/422 [==============================] - 2s 3ms/step - loss: 0.4071 - accuracy: 0.8771 - val_loss: 0.1217 - val_accuracy: 0.9658
+Epoch 2/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.1758 - accuracy: 0.9477 - val_loss: 0.0888 - val_accuracy: 0.9742
+Epoch 3/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.1307 - accuracy: 0.9612 - val_loss: 0.0762 - val_accuracy: 0.9783
+Epoch 4/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.1080 - accuracy: 0.9675 - val_loss: 0.0741 - val_accuracy: 0.9802
+Epoch 5/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0928 - accuracy: 0.9715 - val_loss: 0.0682 - val_accuracy: 0.9815
+Epoch 6/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0808 - accuracy: 0.9746 - val_loss: 0.0695 - val_accuracy: 0.9813
+Epoch 7/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0726 - accuracy: 0.9769 - val_loss: 0.0661 - val_accuracy: 0.9808
+Epoch 8/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0635 - accuracy: 0.9792 - val_loss: 0.0651 - val_accuracy: 0.9822
+Epoch 9/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0577 - accuracy: 0.9813 - val_loss: 0.0692 - val_accuracy: 0.9818
+Epoch 10/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0517 - accuracy: 0.9828 - val_loss: 0.0626 - val_accuracy: 0.9820
+Epoch 11/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0485 - accuracy: 0.9846 - val_loss: 0.0632 - val_accuracy: 0.9840
+Epoch 12/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0456 - accuracy: 0.9851 - val_loss: 0.0659 - val_accuracy: 0.9820
+Epoch 13/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0434 - accuracy: 0.9860 - val_loss: 0.0649 - val_accuracy: 0.9850
+Epoch 14/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0403 - accuracy: 0.9863 - val_loss: 0.0625 - val_accuracy: 0.9842
+Epoch 15/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0411 - accuracy: 0.9863 - val_loss: 0.0644 - val_accuracy: 0.9847
+Epoch 16/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0392 - accuracy: 0.9879 - val_loss: 0.0622 - val_accuracy: 0.9847
+Epoch 17/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0358 - accuracy: 0.9881 - val_loss: 0.0628 - val_accuracy: 0.9850
+Epoch 18/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0349 - accuracy: 0.9886 - val_loss: 0.0744 - val_accuracy: 0.9835
+Epoch 19/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0342 - accuracy: 0.9885 - val_loss: 0.0691 - val_accuracy: 0.9842
+Epoch 20/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0320 - accuracy: 0.9894 - val_loss: 0.0735 - val_accuracy: 0.9823
+313/313 [==============================] - 0s 855us/step
+MLP Accuracy: 0.9819
+Training time: 24.07 seconds
+
+==================================================
+Training Convolutional Neural Network...
+WARNING:tensorflow:From D:\Projects\mnist\.venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+Epoch 1/10
+422/422 [==============================] - 6s 13ms/step - loss: 0.2859 - accuracy: 0.9140 - val_loss: 0.0594 - val_accuracy: 0.9825
+Epoch 2/10
+422/422 [==============================] - 5s 13ms/step - loss: 0.0828 - accuracy: 0.9752 - val_loss: 0.0484 - val_accuracy: 0.9862
+Epoch 3/10
+422/422 [==============================] - 5s 13ms/step - loss: 0.0603 - accuracy: 0.9819 - val_loss: 0.0436 - val_accuracy: 0.9878
+Epoch 4/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0487 - accuracy: 0.9853 - val_loss: 0.0369 - val_accuracy: 0.9893
+Epoch 5/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0402 - accuracy: 0.9875 - val_loss: 0.0338 - val_accuracy: 0.9913
+Epoch 6/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0344 - accuracy: 0.9891 - val_loss: 0.0390 - val_accuracy: 0.9905
+Epoch 7/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0295 - accuracy: 0.9907 - val_loss: 0.0366 - val_accuracy: 0.9892
+Epoch 8/10
+422/422 [==============================] - 5s 13ms/step - loss: 0.0271 - accuracy: 0.9912 - val_loss: 0.0341 - val_accuracy: 0.9910
+Epoch 9/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0226 - accuracy: 0.9923 - val_loss: 0.0369 - val_accuracy: 0.9912
+Epoch 10/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0199 - accuracy: 0.9938 - val_loss: 0.0378 - val_accuracy: 0.9907
+313/313 [==============================] - 1s 2ms/step
+CNN Accuracy: 0.9907
+Training time: 53.35 seconds
+D:\Projects\mnist\.venv\lib\site-packages\keras\src\engine\training.py:3103: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+
+Results saved with timestamp: 20250726_075944
+
+============================================================
+Testing with preprocessing: sobel
+============================================================
+Applying Sobel edge detection...
+
+==================================================
+Training K-Nearest Neighbors...
+KNN Accuracy: 0.9554
+Training time: 0.05 seconds
+
+==================================================
+Training Support Vector Machine...
+Note: This may take several minutes...
+SVM Accuracy: 0.9389
+Training time: 10.99 seconds
+
+==================================================
+Training Random Forest...
+Random Forest Accuracy: 0.9471
+Training time: 202.79 seconds
+
+==================================================
+Training Multi-Layer Perceptron...
+Epoch 1/20
+422/422 [==============================] - 2s 3ms/step - loss: 0.5594 - accuracy: 0.8231 - val_loss: 0.2142 - val_accuracy: 0.9342
+Epoch 2/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.2912 - accuracy: 0.9112 - val_loss: 0.1590 - val_accuracy: 0.9493
+Epoch 3/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.2323 - accuracy: 0.9279 - val_loss: 0.1391 - val_accuracy: 0.9575
+Epoch 4/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.1952 - accuracy: 0.9394 - val_loss: 0.1304 - val_accuracy: 0.9585
+Epoch 5/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.1719 - accuracy: 0.9466 - val_loss: 0.1253 - val_accuracy: 0.9635
+Epoch 6/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.1501 - accuracy: 0.9523 - val_loss: 0.1281 - val_accuracy: 0.9627
+Epoch 7/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.1367 - accuracy: 0.9557 - val_loss: 0.1285 - val_accuracy: 0.9617
+Epoch 8/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.1270 - accuracy: 0.9591 - val_loss: 0.1175 - val_accuracy: 0.9643
+Epoch 9/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.1225 - accuracy: 0.9602 - val_loss: 0.1146 - val_accuracy: 0.9670
+Epoch 10/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.1121 - accuracy: 0.9637 - val_loss: 0.1178 - val_accuracy: 0.9658
+Epoch 11/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.1025 - accuracy: 0.9663 - val_loss: 0.1146 - val_accuracy: 0.9658
+Epoch 12/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0982 - accuracy: 0.9684 - val_loss: 0.1236 - val_accuracy: 0.9650
+Epoch 13/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0934 - accuracy: 0.9698 - val_loss: 0.1189 - val_accuracy: 0.9667
+Epoch 14/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0887 - accuracy: 0.9722 - val_loss: 0.1164 - val_accuracy: 0.9670
+Epoch 15/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0879 - accuracy: 0.9708 - val_loss: 0.1211 - val_accuracy: 0.9650
+Epoch 16/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0794 - accuracy: 0.9745 - val_loss: 0.1112 - val_accuracy: 0.9675
+Epoch 17/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0746 - accuracy: 0.9757 - val_loss: 0.1125 - val_accuracy: 0.9683
+Epoch 18/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0771 - accuracy: 0.9750 - val_loss: 0.1105 - val_accuracy: 0.9673
+Epoch 19/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0729 - accuracy: 0.9760 - val_loss: 0.1142 - val_accuracy: 0.9680
+Epoch 20/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0707 - accuracy: 0.9763 - val_loss: 0.1151 - val_accuracy: 0.9685
+313/313 [==============================] - 0s 940us/step
+MLP Accuracy: 0.9663
+Training time: 24.33 seconds
+
+==================================================
+Training Convolutional Neural Network...
+Epoch 1/10
+422/422 [==============================] - 6s 13ms/step - loss: 0.2774 - accuracy: 0.9139 - val_loss: 0.0620 - val_accuracy: 0.9807
+Epoch 2/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0906 - accuracy: 0.9725 - val_loss: 0.0477 - val_accuracy: 0.9860
+Epoch 3/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0636 - accuracy: 0.9802 - val_loss: 0.0415 - val_accuracy: 0.9890
+Epoch 4/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0518 - accuracy: 0.9843 - val_loss: 0.0385 - val_accuracy: 0.9898
+Epoch 5/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0425 - accuracy: 0.9866 - val_loss: 0.0431 - val_accuracy: 0.9895
+Epoch 6/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0351 - accuracy: 0.9889 - val_loss: 0.0376 - val_accuracy: 0.9887
+Epoch 7/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0283 - accuracy: 0.9903 - val_loss: 0.0404 - val_accuracy: 0.9887
+Epoch 8/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0272 - accuracy: 0.9911 - val_loss: 0.0362 - val_accuracy: 0.9907
+Epoch 9/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0250 - accuracy: 0.9919 - val_loss: 0.0390 - val_accuracy: 0.9903
+Epoch 10/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0205 - accuracy: 0.9933 - val_loss: 0.0406 - val_accuracy: 0.9902
+313/313 [==============================] - 1s 2ms/step
+CNN Accuracy: 0.9906
+Training time: 52.83 seconds
+D:\Projects\mnist\.venv\lib\site-packages\keras\src\engine\training.py:3103: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+
+Results saved with timestamp: 20250726_080508
+
+============================================================
+Testing with preprocessing: hog
+============================================================
+Extracting HOG features...
+
+==================================================
+Training K-Nearest Neighbors...
+KNN Accuracy: 0.9683
+Training time: 0.01 seconds
+
+==================================================
+Training Support Vector Machine...
+Note: This may take several minutes...
+SVM Accuracy: 0.9758
+Training time: 2.16 seconds
+
+==================================================
+Training Random Forest...
+Random Forest Accuracy: 0.9670
+Training time: 196.15 seconds
+
+==================================================
+Training Multi-Layer Perceptron...
+Epoch 1/20
+422/422 [==============================] - 2s 3ms/step - loss: 0.3729 - accuracy: 0.8901 - val_loss: 0.0949 - val_accuracy: 0.9720
+Epoch 2/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.1477 - accuracy: 0.9544 - val_loss: 0.0812 - val_accuracy: 0.9755
+Epoch 3/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.1185 - accuracy: 0.9622 - val_loss: 0.0658 - val_accuracy: 0.9813
+Epoch 4/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.1022 - accuracy: 0.9680 - val_loss: 0.0650 - val_accuracy: 0.9808
+Epoch 5/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0895 - accuracy: 0.9717 - val_loss: 0.0558 - val_accuracy: 0.9840
+Epoch 6/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0819 - accuracy: 0.9737 - val_loss: 0.0599 - val_accuracy: 0.9840
+Epoch 7/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0742 - accuracy: 0.9768 - val_loss: 0.0547 - val_accuracy: 0.9828
+Epoch 8/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0699 - accuracy: 0.9780 - val_loss: 0.0575 - val_accuracy: 0.9823
+Epoch 9/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0640 - accuracy: 0.9794 - val_loss: 0.0582 - val_accuracy: 0.9827
+Epoch 10/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0611 - accuracy: 0.9803 - val_loss: 0.0567 - val_accuracy: 0.9842
+Epoch 11/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0563 - accuracy: 0.9821 - val_loss: 0.0538 - val_accuracy: 0.9860
+Epoch 12/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0516 - accuracy: 0.9839 - val_loss: 0.0528 - val_accuracy: 0.9852
+Epoch 13/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0497 - accuracy: 0.9835 - val_loss: 0.0538 - val_accuracy: 0.9867
+Epoch 14/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0457 - accuracy: 0.9841 - val_loss: 0.0501 - val_accuracy: 0.9862
+Epoch 15/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0448 - accuracy: 0.9850 - val_loss: 0.0559 - val_accuracy: 0.9847
+Epoch 16/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0407 - accuracy: 0.9862 - val_loss: 0.0522 - val_accuracy: 0.9850
+Epoch 17/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0410 - accuracy: 0.9863 - val_loss: 0.0545 - val_accuracy: 0.9855
+Epoch 18/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0380 - accuracy: 0.9877 - val_loss: 0.0513 - val_accuracy: 0.9860
+Epoch 19/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0354 - accuracy: 0.9879 - val_loss: 0.0541 - val_accuracy: 0.9858
+Epoch 20/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0356 - accuracy: 0.9876 - val_loss: 0.0521 - val_accuracy: 0.9853
+313/313 [==============================] - 0s 895us/step
+MLP Accuracy: 0.9805
+Training time: 20.16 seconds
+D:\Projects\mnist\.venv\lib\site-packages\keras\src\engine\training.py:3103: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+
+Results saved with timestamp: 20250726_080916
+
+============================================================
+Testing with preprocessing: pca
+============================================================
+Applying PCA...
+PCA used 100 components, explaining 91.4% of variance
+
+==================================================
+Training K-Nearest Neighbors...
+KNN Accuracy: 0.9727
+Training time: 0.01 seconds
+
+==================================================
+Training Support Vector Machine...
+Note: This may take several minutes...
+SVM Accuracy: 0.9686
+Training time: 1.47 seconds
+
+==================================================
+Training Random Forest...
+Random Forest Accuracy: 0.9509
+Training time: 221.05 seconds
+
+==================================================
+Training Multi-Layer Perceptron...
+Epoch 1/20
+422/422 [==============================] - 2s 2ms/step - loss: 0.4662 - accuracy: 0.8583 - val_loss: 0.1417 - val_accuracy: 0.9597
+Epoch 2/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.2044 - accuracy: 0.9391 - val_loss: 0.1002 - val_accuracy: 0.9722
+Epoch 3/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.1538 - accuracy: 0.9532 - val_loss: 0.0818 - val_accuracy: 0.9767
+Epoch 4/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.1260 - accuracy: 0.9622 - val_loss: 0.0736 - val_accuracy: 0.9783
+Epoch 5/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.1062 - accuracy: 0.9672 - val_loss: 0.0685 - val_accuracy: 0.9803
+Epoch 6/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0963 - accuracy: 0.9700 - val_loss: 0.0625 - val_accuracy: 0.9820
+Epoch 7/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0837 - accuracy: 0.9738 - val_loss: 0.0606 - val_accuracy: 0.9812
+Epoch 8/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0764 - accuracy: 0.9759 - val_loss: 0.0587 - val_accuracy: 0.9828
+Epoch 9/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0724 - accuracy: 0.9773 - val_loss: 0.0590 - val_accuracy: 0.9840
+Epoch 10/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0649 - accuracy: 0.9796 - val_loss: 0.0564 - val_accuracy: 0.9837
+Epoch 11/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0630 - accuracy: 0.9798 - val_loss: 0.0572 - val_accuracy: 0.9828
+Epoch 12/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0569 - accuracy: 0.9814 - val_loss: 0.0551 - val_accuracy: 0.9847
+Epoch 13/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0543 - accuracy: 0.9826 - val_loss: 0.0560 - val_accuracy: 0.9818
+Epoch 14/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0515 - accuracy: 0.9834 - val_loss: 0.0544 - val_accuracy: 0.9847
+Epoch 15/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0492 - accuracy: 0.9845 - val_loss: 0.0542 - val_accuracy: 0.9850
+Epoch 16/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0455 - accuracy: 0.9853 - val_loss: 0.0532 - val_accuracy: 0.9865
+Epoch 17/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0434 - accuracy: 0.9856 - val_loss: 0.0534 - val_accuracy: 0.9858
+Epoch 18/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0431 - accuracy: 0.9857 - val_loss: 0.0527 - val_accuracy: 0.9858
+Epoch 19/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0403 - accuracy: 0.9868 - val_loss: 0.0557 - val_accuracy: 0.9847
+Epoch 20/20
+422/422 [==============================] - 1s 2ms/step - loss: 0.0382 - accuracy: 0.9874 - val_loss: 0.0539 - val_accuracy: 0.9865
+313/313 [==============================] - 0s 823us/step
+MLP Accuracy: 0.9847
+Training time: 17.90 seconds
+D:\Projects\mnist\.venv\lib\site-packages\keras\src\engine\training.py:3103: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+
+Results saved with timestamp: 20250726_081325
+
+============================================================
+Testing with preprocessing: binarize
+============================================================
+Binarizing images...
+
+==================================================
+Training K-Nearest Neighbors...
+KNN Accuracy: 0.9576
+Training time: 0.03 seconds
+
+==================================================
+Training Support Vector Machine...
+Note: This may take several minutes...
+SVM Accuracy: 0.9582
+Training time: 10.55 seconds
+
+==================================================
+Training Random Forest...
+Random Forest Accuracy: 0.9676
+Training time: 27.52 seconds
+
+==================================================
+Training Multi-Layer Perceptron...
+Epoch 1/20
+422/422 [==============================] - 2s 3ms/step - loss: 0.4289 - accuracy: 0.8692 - val_loss: 0.1372 - val_accuracy: 0.9622
+Epoch 2/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.1853 - accuracy: 0.9441 - val_loss: 0.1006 - val_accuracy: 0.9713
+Epoch 3/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.1367 - accuracy: 0.9581 - val_loss: 0.0856 - val_accuracy: 0.9750
+Epoch 4/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.1091 - accuracy: 0.9664 - val_loss: 0.0817 - val_accuracy: 0.9755
+Epoch 5/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0926 - accuracy: 0.9708 - val_loss: 0.0804 - val_accuracy: 0.9750
+Epoch 6/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0769 - accuracy: 0.9763 - val_loss: 0.0745 - val_accuracy: 0.9787
+Epoch 7/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0670 - accuracy: 0.9786 - val_loss: 0.0768 - val_accuracy: 0.9775
+Epoch 8/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0635 - accuracy: 0.9797 - val_loss: 0.0731 - val_accuracy: 0.9802
+Epoch 9/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0560 - accuracy: 0.9824 - val_loss: 0.0774 - val_accuracy: 0.9793
+Epoch 10/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0511 - accuracy: 0.9834 - val_loss: 0.0730 - val_accuracy: 0.9798
+Epoch 11/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0461 - accuracy: 0.9846 - val_loss: 0.0744 - val_accuracy: 0.9797
+Epoch 12/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0410 - accuracy: 0.9864 - val_loss: 0.0721 - val_accuracy: 0.9815
+Epoch 13/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0409 - accuracy: 0.9868 - val_loss: 0.0746 - val_accuracy: 0.9792
+Epoch 14/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0351 - accuracy: 0.9886 - val_loss: 0.0768 - val_accuracy: 0.9812
+Epoch 15/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0344 - accuracy: 0.9889 - val_loss: 0.0766 - val_accuracy: 0.9807
+Epoch 16/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0343 - accuracy: 0.9883 - val_loss: 0.0748 - val_accuracy: 0.9812
+Epoch 17/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0311 - accuracy: 0.9892 - val_loss: 0.0820 - val_accuracy: 0.9797
+Epoch 18/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0315 - accuracy: 0.9899 - val_loss: 0.0791 - val_accuracy: 0.9820
+Epoch 19/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0293 - accuracy: 0.9900 - val_loss: 0.0777 - val_accuracy: 0.9808
+Epoch 20/20
+422/422 [==============================] - 1s 3ms/step - loss: 0.0259 - accuracy: 0.9914 - val_loss: 0.0804 - val_accuracy: 0.9820
+313/313 [==============================] - 0s 887us/step
+MLP Accuracy: 0.9781
+Training time: 23.83 seconds
+
+==================================================
+Training Convolutional Neural Network...
+Epoch 1/10
+422/422 [==============================] - 6s 13ms/step - loss: 0.3006 - accuracy: 0.9075 - val_loss: 0.0784 - val_accuracy: 0.9758
+Epoch 2/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0937 - accuracy: 0.9722 - val_loss: 0.0488 - val_accuracy: 0.9863
+Epoch 3/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0685 - accuracy: 0.9791 - val_loss: 0.0434 - val_accuracy: 0.9880
+Epoch 4/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0527 - accuracy: 0.9837 - val_loss: 0.0467 - val_accuracy: 0.9868
+Epoch 5/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0454 - accuracy: 0.9859 - val_loss: 0.0396 - val_accuracy: 0.9887
+Epoch 6/10
+422/422 [==============================] - 5s 13ms/step - loss: 0.0393 - accuracy: 0.9878 - val_loss: 0.0427 - val_accuracy: 0.9902
+Epoch 7/10
+422/422 [==============================] - 5s 13ms/step - loss: 0.0336 - accuracy: 0.9891 - val_loss: 0.0408 - val_accuracy: 0.9898
+Epoch 8/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0287 - accuracy: 0.9910 - val_loss: 0.0394 - val_accuracy: 0.9902
+Epoch 9/10
+422/422 [==============================] - 5s 12ms/step - loss: 0.0269 - accuracy: 0.9914 - val_loss: 0.0427 - val_accuracy: 0.9893
+Epoch 10/10
+422/422 [==============================] - 5s 13ms/step - loss: 0.0229 - accuracy: 0.9927 - val_loss: 0.0370 - val_accuracy: 0.9913
+313/313 [==============================] - 1s 2ms/step
+CNN Accuracy: 0.9893
+Training time: 53.18 seconds
+D:\Projects\mnist\.venv\lib\site-packages\keras\src\engine\training.py:3103: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+
+Results saved with timestamp: 20250726_081552
+
+Accuracy Summary Table:
+              baseline  sobel    hog    pca binarize
+CNN              0.991  0.991    N/A    N/A    0.989
+KNN              0.969  0.955  0.968  0.973    0.958
+MLP              0.982  0.966  0.981  0.985    0.978
+Random Forest    0.969  0.947  0.967  0.951    0.968
+SVM              0.963  0.939  0.976  0.969    0.958
+
+============================================================
+Analysis complete! Check the 'figures', 'models', and 'results' directories.
+
+Process finished with exit code 0
