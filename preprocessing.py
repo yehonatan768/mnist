@@ -12,7 +12,7 @@ def normalize_images(images):
 
 def binarize_images(images, threshold=0.5):
     return (images > threshold).astype(np.float32)
-    
+
 
 def apply_pca(images, n_components=50, variance_ratio=None):
     flat_images = images.reshape(images.shape[0], -1)
@@ -32,8 +32,6 @@ def apply_pca(images, n_components=50, variance_ratio=None):
     return reduced, pca
 
 
-
-
 def extract_hog_features(images):
     features = []
     for img in images:
@@ -41,29 +39,6 @@ def extract_hog_features(images):
                  cells_per_block=(2, 2), visualize=False, channel_axis=None)
         features.append(fd)
     return np.array(features)
-
-
-def zca_whitening(images):
-    flat = images.reshape(images.shape[0], -1)
-    scaler = StandardScaler()
-    flat_std = scaler.fit_transform(flat)
-    sigma = np.dot(flat_std.T, flat_std) / flat_std.shape[0]
-    U, S, _ = np.linalg.svd(sigma)
-    epsilon = 1e-5
-    ZCA_matrix = np.dot(U, np.dot(np.diag(1.0 / np.sqrt(S + epsilon)), U.T))
-    whitened = np.dot(flat_std, ZCA_matrix.T)
-    return whitened.reshape(images.shape)
-
-
-def augment_images(images):
-    datagen = ImageDataGenerator(
-        rotation_range=10,
-        width_shift_range=0.1,
-        height_shift_range=0.1,
-        zoom_range=0.1
-    )
-    augmented = datagen.flow(images[..., np.newaxis], batch_size=len(images), shuffle=False)
-    return next(augmented).squeeze()
 
 
 def edge_detection(images, method="sobel"):
@@ -80,4 +55,3 @@ def edge_detection(images, method="sobel"):
         else:
             raise ValueError("Unsupported edge detection method")
     return np.array(edges)
-
