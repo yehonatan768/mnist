@@ -15,7 +15,7 @@ import pandas as pd
 # Import your modules
 from preprocessing import (
     normalize_images, binarize_images, apply_pca,
-    extract_hog_features, zca_whitening, augment_images,
+    extract_hog_featuresa,
     edge_detection
 )
 from models import (
@@ -456,7 +456,7 @@ def main():
     # Load data
     X_train, y_train, X_test, y_test = load_and_prepare_data()
 
-    X_train, y_train, X_test, y_test = X_train[:200], y_train[:200], X_test[:200], y_test[:200]
+    """ X_train, y_train, X_test, y_test = X_train[:200], y_train[:200], X_test[:200], y_test[:200] """
 
     # Dictionary to store all results
     all_results = {}
